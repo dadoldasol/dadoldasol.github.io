@@ -1,4 +1,4 @@
-I"‹
+I"b
 
 <div class="masthead">
   <div class="masthead__inner-wrap">
@@ -11,6 +11,10 @@
         </a>
         <ul class="visible-links"><li class="masthead__menu-item">
               <a href="/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/java/">JavaStudy</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/leetcode/">Leetcode</a>
             </li></ul>
         
         <button class="greedy-nav__toggle hidden" type="button">

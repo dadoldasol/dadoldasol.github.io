@@ -2,6 +2,10 @@
 main:
   - title: "About"
     url: /about/
+  - title: "JavaStudy"
+    url: /categories/java/
+  - title: "Leetcode"
+    url: /categories/leetcode/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
