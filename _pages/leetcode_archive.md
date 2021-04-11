@@ -1,6 +1,6 @@
 ---
 title: "Leetcode 문제풀이 모음집"
-permalink: /categories/leetcode
+permalink: /categories/leetcode/
 layout: category
 author_profile: true
 taxonomy: leetcode
