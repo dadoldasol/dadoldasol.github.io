@@ -1,9 +1,9 @@
 ---
-title: "블로그 소개글"
+title: "About me"
 permalink: /about/
 layout: single
 ---
 
-## 블로그 소개글 등록 예정
+## 일상의 작은 성공들 이뤄가기
 
-jekyll 익히는 중
+여러가지 공부한 것들을 올리고 있습니다.

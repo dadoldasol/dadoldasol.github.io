@@ -2,7 +2,7 @@
 main:
   - title: "About"
     url: /about/
-  - title: "JavaStudy"
-    url: /categories/java/
-  - title: "Leetcode"
-    url: /categories/leetcode/
+  - title: "DigitalImageProcessing"
+    url: /categories/dip/
+  - title: "Algorithm"
+    url: /categories/algo/
