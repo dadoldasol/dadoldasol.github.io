@@ -1,1 +1,87 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://dadoldasol.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://dadoldasol.github.io/" rel="alternate" type="text/html" /><updated>2022-01-18T21:52:40+09:00</updated><id>https://dadoldasol.github.io/feed.xml</id><title type="html">Solog About Learning</title><subtitle>just get on with it</subtitle><author><name>Solog</name></author><entry><title type="html">DIP Test</title><link href="https://dadoldasol.github.io/dip/dip-test/" rel="alternate" type="text/html" title="DIP Test" /><published>2022-01-18T00:00:00+09:00</published><updated>2022-01-18T00:00:00+09:00</updated><id>https://dadoldasol.github.io/dip/dip-test</id><content type="html" xml:base="https://dadoldasol.github.io/dip/dip-test/">&lt;p&gt;dip test&lt;/p&gt;</content><author><name>Solog</name></author><category term="dip" /><summary type="html">digital image procession</summary></entry><entry><title type="html">Leetcode Week1</title><link href="https://dadoldasol.github.io/algo/leetcode-week1/" rel="alternate" type="text/html" title="Leetcode Week1" /><published>2021-04-11T00:00:00+09:00</published><updated>2021-04-11T00:00:00+09:00</updated><id>https://dadoldasol.github.io/algo/leetcode-week1</id><content type="html" xml:base="https://dadoldasol.github.io/algo/leetcode-week1/">&lt;p&gt;leetcode category test&lt;/p&gt;</content><author><name>Solog</name></author><category term="algo" /><summary type="html">릿코드 1주차 문제풀이 모음</summary></entry></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://dadoldasol.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://dadoldasol.github.io/" rel="alternate" type="text/html" /><updated>2022-05-10T22:57:15+09:00</updated><id>https://dadoldasol.github.io/feed.xml</id><title type="html">Solog About Learning</title><subtitle>just get on with it</subtitle><author><name>Solog</name></author><entry><title type="html">Ch1. 깨끗한 코드</title><link href="https://dadoldasol.github.io/cleancode/cleancode-ch1/" rel="alternate" type="text/html" title="Ch1. 깨끗한 코드" /><published>2022-05-10T00:00:00+09:00</published><updated>2022-05-10T00:00:00+09:00</updated><id>https://dadoldasol.github.io/cleancode/cleancode-ch1</id><content type="html" xml:base="https://dadoldasol.github.io/cleancode/cleancode-ch1/">&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;코드는 존재하리라&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;궁극적으로 코드는 요구사항을 표현하는 언어라는 사실을 명심한다.&lt;br /&gt;
+요구사항에 더욱 가까운 언어를 만들 수도 있고,&lt;br /&gt;
+요구사항에서 정형 구조를 뽑아내는 도구를 만들 수도 있다.&lt;br /&gt;
+하지만 어느 순간에는 정밀한 표현이 필요하다. 그 필요성을 없앨 방법은 없다.&lt;br /&gt;
+그러므로 코드는 항상 존재하리라.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;나쁜 코드&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;르블랑의 법칙(leblanc’s Law) : 나중은 결코 오지 않는다.&lt;/p&gt;
+
+&lt;p&gt;나쁜 코드가 쌓일수록 팀 생산성은 떨어진다. 
+하지만 기한을 맞추려면 나쁜 코드를 양산할 수밖에 없다고 느낀다.
+그래서 프로그래머는 빨리 가려고 시간을 들이지 않는다.&lt;/p&gt;
+
+&lt;p&gt;하지만, 기한을 맞추는 유일한 방법은, 그러니까 빨리 가는 유일한 방법은, 언제나 코드를 최대한 깨끗하게 유지하는 습관이다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;깨끗한 코드란?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;바야네 스트롭스트룹&lt;br /&gt;
+  깨끗한 코드는 보는 사람에게 즐거움을 선사해야 한다.&lt;br /&gt;
+  깨끗한 코드는 세세한 사항까지 꼼꼼하게 처리하는 코드다.&lt;br /&gt;
+  깨끗한 코드란 한 가지를 잘 한다고 단언한다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;그래디 부치&lt;br /&gt;
+가독성이 좋아야 한다.&lt;br /&gt;
+코드는 추측이 아니라 사실에 기반해야 한다. 반드시 필요한 내용만 담아야 한다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;큰 데이브 토마스&lt;br /&gt;
+깨끗한 코드란 다른 사람이 고치기 쉽다.&lt;br /&gt;
+코드는 작을수록 좋다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;마이클 페더스&lt;br /&gt;
+깨끗한 코드는 주의 깊게 작성한 코드다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;론 제프리스&lt;br /&gt;
+중복 줄이기, 표현력 높이기, 초반부터 간단한 추상화 고려하기&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;워드 커닝햄&lt;br /&gt;
+깨끗한 코드는 읽으면서 놀랄 일이 없어야 한다. &lt;br /&gt;
+읽으면서 짐작한 대로 돌아가는 코드가 깨끗한 코드다.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;보이스카우트 규칙&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;캠프장은 처음 왔을 때보다 더 깨끗하게 해놓고 떠나라.&lt;/p&gt;</content><author><name>Solog</name></author><category term="cleancode" /><summary type="html">cleancode</summary></entry><entry><title type="html">알고리즘 문제 풀이 기록</title><link href="https://dadoldasol.github.io/algo/algo-first/" rel="alternate" type="text/html" title="알고리즘 문제 풀이 기록" /><published>2022-01-24T00:00:00+09:00</published><updated>2022-01-24T00:00:00+09:00</updated><id>https://dadoldasol.github.io/algo/algo-first</id><content type="html" xml:base="https://dadoldasol.github.io/algo/algo-first/">&lt;hr /&gt;
+
+&lt;p&gt;여러 가지 이유로 12월 중순부터 알고리즘 문제를 풀기 시작했다.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;C++ STL을 제대로 모른다. (회사에서는 거의 몰라도 되는 수준의 코딩을 진행함) &lt;br /&gt;
+이직을 위한 준비 &lt;br /&gt;
+알고리즘 실력을 향상시키고자 하는 마음 &lt;br /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;처음에는 이직을 위한 원대한 꿈을 가지고 시작했지만…  &lt;br /&gt;
+코딩한다는 사람 치고 너무 모르는 것 같아서 &lt;br /&gt;
+이직 생각은 반쯤 버리고 시간 나는 대로 풀고 있게 됐다.&lt;/p&gt;
+
+&lt;p&gt;어디서부터 시작해야 하는지 정말 잘 모르겠어서 &lt;br /&gt;
+여기저기 검색해보니 아래 사이트에서 정리를 잘 해주셨다.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://plzrun.tistory.com/entry/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%AC%B8%EC%A0%9C%ED%92%80%EC%9D%B4PS-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0&quot;&gt;https://plzrun.tistory.com/entry/알고리즘-문제풀이PS-시작하기&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;그래서 현재까지는 위 사이트에 나와있는 대로 뭘 모르는지 몰라 &lt;br /&gt;
+boj 문제들을 이것 저것 풀면서 짚어나가고 있다. &lt;br /&gt;
+나 메타인지가 부족한가.. 🤨&lt;/p&gt;
+
+&lt;p&gt;아무튼 여력이 되는만큼 풀고 푼 내용들을 정말 간략하게 여기에 올려볼 예정이다. &lt;br /&gt;
+과연 알고리즘 문제 해결 전략 책까지 볼 수 있을지…&lt;/p&gt;</content><author><name>Solog</name></author><category term="algo" /><summary type="html">서론</summary></entry><entry><title type="html">Leetcode Week1</title><link href="https://dadoldasol.github.io/algo/leetcode-week1/" rel="alternate" type="text/html" title="Leetcode Week1" /><published>2021-04-11T00:00:00+09:00</published><updated>2021-04-11T00:00:00+09:00</updated><id>https://dadoldasol.github.io/algo/leetcode-week1</id><content type="html" xml:base="https://dadoldasol.github.io/algo/leetcode-week1/">&lt;p&gt;leetcode category test&lt;/p&gt;</content><author><name>Solog</name></author><category term="algo" /><summary type="html">릿코드 1주차 문제풀이 모음</summary></entry></feed>

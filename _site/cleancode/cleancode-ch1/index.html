@@ -9,28 +9,32 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Solog About Learning</title>
-<meta name="description" content="just get on with it">
+<!-- begin _includes/seo.html --><title>Ch1. 깨끗한 코드 - Solog About Learning</title>
+<meta name="description" content="cleancode">
 
 
   <meta name="author" content="Solog">
   
+  <meta property="article:author" content="Solog">
+  
 
 
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Solog About Learning">
-<meta property="og:title" content="Solog About Learning">
-<meta property="og:url" content="https://dadoldasol.github.io/">
+<meta property="og:title" content="Ch1. 깨끗한 코드">
+<meta property="og:url" content="https://dadoldasol.github.io/cleancode/cleancode-ch1/">
 
 
-  <meta property="og:description" content="just get on with it">
-
-
-
+  <meta property="og:description" content="cleancode">
 
 
 
+
+
+
+
+  <meta property="article:published_time" content="2022-05-10T00:00:00+09:00">
 
 
 
@@ -41,7 +45,7 @@
   
 
 
-<link rel="canonical" href="https://dadoldasol.github.io/">
+<link rel="canonical" href="https://dadoldasol.github.io/cleancode/cleancode-ch1/">
 
 
 
@@ -104,7 +108,7 @@
 
   </head>
 
-  <body class="layout--home">
+  <body class="layout--single">
     <nav class="skip-links">
   <h2 class="screen-reader-text">Skip links</h2>
   <ul>
@@ -266,33 +270,18 @@
 
 
 
-  <div class="archive">
-    
-      <h1 id="page-title" class="page__title"></h1>
-    
-    
-
-<h3 class="archive__subtitle">Recent posts</h3>
-
-
-
-
-<div class="entries-list">
-  
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Ch1. 깨끗한 코드">
+    <meta itemprop="description" content="cleancode">
+    <meta itemprop="datePublished" content="2022-05-10T00:00:00+09:00">
     
 
-
-
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
+    <div class="page__inner-wrap">
       
-        <a href="/cleancode/cleancode-ch1/" rel="permalink">Ch1. 깨끗한 코드
-</a>
-      
-    </h2>
-    
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Ch1. 깨끗한 코드
+</h1>
+          
 
   <p class="page__meta">
     
@@ -313,17 +302,144 @@
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">cleancode
-</p>
-  </article>
-</div>
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <hr />
+
+<p><strong>코드는 존재하리라</strong></p>
+
+<p>궁극적으로 코드는 요구사항을 표현하는 언어라는 사실을 명심한다.<br />
+요구사항에 더욱 가까운 언어를 만들 수도 있고,<br />
+요구사항에서 정형 구조를 뽑아내는 도구를 만들 수도 있다.<br />
+하지만 어느 순간에는 정밀한 표현이 필요하다. 그 필요성을 없앨 방법은 없다.<br />
+그러므로 코드는 항상 존재하리라.</p>
+
+<hr />
+
+<p><strong>나쁜 코드</strong></p>
+
+<p>르블랑의 법칙(leblanc’s Law) : 나중은 결코 오지 않는다.</p>
+
+<p>나쁜 코드가 쌓일수록 팀 생산성은 떨어진다. 
+하지만 기한을 맞추려면 나쁜 코드를 양산할 수밖에 없다고 느낀다.
+그래서 프로그래머는 빨리 가려고 시간을 들이지 않는다.</p>
+
+<p>하지만, 기한을 맞추는 유일한 방법은, 그러니까 빨리 가는 유일한 방법은, 언제나 코드를 최대한 깨끗하게 유지하는 습관이다.</p>
+
+<hr />
+
+<p><strong>깨끗한 코드란?</strong></p>
+
+<ul>
+  <li>
+    <p>바야네 스트롭스트룹<br />
+  깨끗한 코드는 보는 사람에게 즐거움을 선사해야 한다.<br />
+  깨끗한 코드는 세세한 사항까지 꼼꼼하게 처리하는 코드다.<br />
+  깨끗한 코드란 한 가지를 잘 한다고 단언한다.</p>
+  </li>
+  <li>
+    <p>그래디 부치<br />
+가독성이 좋아야 한다.<br />
+코드는 추측이 아니라 사실에 기반해야 한다. 반드시 필요한 내용만 담아야 한다.</p>
+  </li>
+  <li>
+    <p>큰 데이브 토마스<br />
+깨끗한 코드란 다른 사람이 고치기 쉽다.<br />
+코드는 작을수록 좋다.</p>
+  </li>
+  <li>
+    <p>마이클 페더스<br />
+깨끗한 코드는 주의 깊게 작성한 코드다.</p>
+  </li>
+  <li>
+    <p>론 제프리스<br />
+중복 줄이기, 표현력 높이기, 초반부터 간단한 추상화 고려하기</p>
+  </li>
+  <li>
+    <p>워드 커닝햄<br />
+깨끗한 코드는 읽으면서 놀랄 일이 없어야 한다. <br />
+읽으면서 짐작한 대로 돌아가는 코드가 깨끗한 코드다.</p>
+  </li>
+</ul>
+
+<hr />
+
+<p><strong>보이스카우트 규칙</strong></p>
+
+<p>캠프장은 처음 왔을 때보다 더 깨끗하게 해놓고 떠나라.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
 
   
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
     
+      <a href="/categories/#cleancode" class="page__taxonomy-item" rel="tag">cleancode</a>
+    
+    </span>
+  </p>
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2022-05-10T00:00:00+09:00">May 10, 2022</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Ch1.+%EA%B9%A8%EB%81%97%ED%95%9C+%EC%BD%94%EB%93%9C%20https%3A%2F%2Fdadoldasol.github.io%2Fcleancode%2Fcleancode-ch1%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdadoldasol.github.io%2Fcleancode%2Fcleancode-ch1%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fdadoldasol.github.io%2Fcleancode%2Fcleancode-ch1%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/algo/algo-first/" class="pagination--pager" title="알고리즘 문제 풀이 기록
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
 
 
 
-<div class="list__item">
+<div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
@@ -358,12 +474,12 @@
   </article>
 </div>
 
-  
-    
+        
+          
 
 
 
-<div class="list__item">
+<div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
@@ -398,14 +514,13 @@
   </article>
 </div>
 
+        
+      </div>
+    </div>
+  
   
 </div>
 
-
-
-
-  </div>
-</div>
     </div>
 
     
