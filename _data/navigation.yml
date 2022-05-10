@@ -2,7 +2,7 @@
 main:
   - title: "About"
     url: /about/
-  - title: "DigitalImageProcessing"
-    url: /categories/dip/
+  - title: "CleanCode"
+    url: /categories/cleancode/
   - title: "Algorithm"
     url: /categories/algo/
