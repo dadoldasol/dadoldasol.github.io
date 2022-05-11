@@ -16,4 +16,10 @@ var store = [{
         "tags": [],
         "url": "/cleancode/cleancode-ch1/",
         "teaser": null
+      },{
+        "title": "Ch2. 의미 있는 이름",
+        "excerpt":"이름을 잘 짓는 것은 굉장히 중요하다. 이 장에서는 몇가지 이름 짓는 법에 대해 나열한다. 의도를 분명히 밝혀라 int d; // 경과 시간(단위: 날짜) 이름 d는 아무 의미도 나타내지 않는다. 의도가 드러나는 이름을 사용하면 코드 이해와 변경이 쉬워진다. 그릇된 정보를 피하라 코드에 그릇된 단서를 남겨서는 안 된다. 나름대로 널리 쓰이는 의미가...","categories": ["cleancode"],
+        "tags": [],
+        "url": "/cleancode/cleancode-ch2/",
+        "teaser": null
       }]

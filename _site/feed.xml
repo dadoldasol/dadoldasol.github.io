@@ -1,4 +1,130 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://dadoldasol.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://dadoldasol.github.io/" rel="alternate" type="text/html" /><updated>2022-05-10T22:57:15+09:00</updated><id>https://dadoldasol.github.io/feed.xml</id><title type="html">Solog About Learning</title><subtitle>just get on with it</subtitle><author><name>Solog</name></author><entry><title type="html">Ch1. 깨끗한 코드</title><link href="https://dadoldasol.github.io/cleancode/cleancode-ch1/" rel="alternate" type="text/html" title="Ch1. 깨끗한 코드" /><published>2022-05-10T00:00:00+09:00</published><updated>2022-05-10T00:00:00+09:00</updated><id>https://dadoldasol.github.io/cleancode/cleancode-ch1</id><content type="html" xml:base="https://dadoldasol.github.io/cleancode/cleancode-ch1/">&lt;hr /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://dadoldasol.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://dadoldasol.github.io/" rel="alternate" type="text/html" /><updated>2022-05-11T22:35:48+09:00</updated><id>https://dadoldasol.github.io/feed.xml</id><title type="html">Solog About Learning</title><subtitle>just get on with it</subtitle><author><name>Solog</name></author><entry><title type="html">Ch2. 의미 있는 이름</title><link href="https://dadoldasol.github.io/cleancode/cleancode-ch2/" rel="alternate" type="text/html" title="Ch2. 의미 있는 이름" /><published>2022-05-11T00:00:00+09:00</published><updated>2022-05-11T00:00:00+09:00</updated><id>https://dadoldasol.github.io/cleancode/cleancode-ch2</id><content type="html" xml:base="https://dadoldasol.github.io/cleancode/cleancode-ch2/">&lt;hr /&gt;
+
+&lt;p&gt;이름을 잘 짓는 것은 굉장히 중요하다.&lt;br /&gt;
+이 장에서는 몇가지 이름 짓는 법에 대해 나열한다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;의도를 분명히 밝혀라&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 경과 시간(단위: 날짜)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;이름 d는 아무 의미도 나타내지 않는다. &lt;br /&gt;
+의도가 드러나는 이름을 사용하면 코드 이해와 변경이 쉬워진다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;그릇된 정보를 피하라&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;코드에 그릇된 단서를 남겨서는 안 된다.&lt;/li&gt;
+  &lt;li&gt;나름대로 널리 쓰이는 의미가 있는 단어를 다른 의미로 사용해도 안 된다.&lt;br /&gt;
+(ex. hp, aix, sco : 유닉스 플랫폼이나 유닉스 변종을 가르키는 이름)&lt;/li&gt;
+  &lt;li&gt;서로 흡사한 이름을 사용하지 않도록 주의한다.&lt;/li&gt;
+  &lt;li&gt;유사한 개념은 유사한 표기법을 사용한다. 일관성이 떨어지는 표기법은 그릇된 정보다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;의미 있게 구분하라&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;연속된 숫자를 덧붙이거나 불용어(noise word)를 추가하는 방식은 적절하지 못하다.&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;a2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;읽는 사람이 차이를 알도록 이름을 지어라.&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;getActiveAccount&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;getActiveAccounts&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;발음하기 쉬운 이름을 사용하라&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;genymdhms&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;generate&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;year&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;month&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;...)&lt;/span&gt;  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;이 변수를 직원들과 이야기할 때 어려움이 있다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;검색하기 쉬운 이름을 사용하라&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;e와 숫자 7과 같은 변수와 상수는 검색하기 어렵다.&lt;br /&gt;
+검색을 하려고 한다면 다른 것들도 검색되어 찾기에 어려움이 생긴다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;인코딩을 피하라&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;유형이나 범위 정보까지 인코딩에 넣으면 그만큼 이름을 해독하기가 어렵다.&lt;br /&gt;
+개발자가 익힐 코드 양은 상당히 많은데, 여기에 부담을 더하지 말자.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;자신의 기억력을 자랑하지 마라&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;독자가 코드를 읽으면서 변수 이름을 자신이 아는 이름으로 변환해야 한다면,&lt;br /&gt;
+그 변수 이름은 바람직하지 못하다.&lt;br /&gt;
+전문가 프로그래머는 명료함이 최고라는 사실을 이해한다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;클래스 이름&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;명사, 명사구가 적합하다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;메서드 이름&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;동사, 동사구가 적합하다.&lt;br /&gt;
+접근자, 변경자, 조건자는 값 앞에 get, set, is를 붙인다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;기발한 이름은 피하라&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;특정 문화에서만 사용하는 농담은 피하는 편이 좋다.&lt;br /&gt;
+의도를 분명하고 솔직하게 표현하라.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;한 개념에 한 단어를 사용하라&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;추상적인 개념 하나에 단어 하나를 선택해 이를 고수한다.&lt;br /&gt;
+예를 들어, 똑같은 메서드를 클래스마다 fetch, retrieve, get으로 제각각 부르면 혼란스럽다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;말장난을 하지마라&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;한 단어를 두 가지 목적으로 사용하지 마라. 다른 개념에 같은 단어를 사용한다면 그것은 말장난에 불과하다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;의미 있는 맥락을 추가하라&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;스스로 의미가 분명한 이름이 없지 않다. 
+클래스, 함수, 이름 공간에 넣어 맥락을 부여한다. &lt;br /&gt;
+모든 방법이 실패하면 마지막 수단으로 접두어를 붙인다.&lt;/p&gt;
+
+&lt;p&gt;예를 들어, firstName, lastName, street, houseNumber, city, state 라는 변수가 있다.&lt;br /&gt;
+변수를 훑어보면 주소라는 사실을 금방 알아챈다.&lt;br /&gt;
+하지만 어느 메서드가 state라는 변수 하나만 사용한다면?&lt;br /&gt;
+알아차리기 어려울 것이다.&lt;/p&gt;
+
+&lt;p&gt;addr라는 접두어를 추가해 addrFirstName, addrLastName, addrState라고 쓰면 맥락이 좀 더 분명해진다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;불필요한 맥락을 없애라&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;고급 휘발유 충전소(Gas Station Delux)라는 애플리케이션을 짠다고 가정하자.&lt;br /&gt;
+모든 클래스 이름을 GSD로 시작하겠다는 생각은 전혀 바람직하지 못하다.&lt;/p&gt;</content><author><name>Solog</name></author><category term="cleancode" /><summary type="html">cleancode</summary></entry><entry><title type="html">Ch1. 깨끗한 코드</title><link href="https://dadoldasol.github.io/cleancode/cleancode-ch1/" rel="alternate" type="text/html" title="Ch1. 깨끗한 코드" /><published>2022-05-10T00:00:00+09:00</published><updated>2022-05-10T00:00:00+09:00</updated><id>https://dadoldasol.github.io/cleancode/cleancode-ch1</id><content type="html" xml:base="https://dadoldasol.github.io/cleancode/cleancode-ch1/">&lt;hr /&gt;
 
 &lt;p&gt;&lt;strong&gt;코드는 존재하리라&lt;/strong&gt;&lt;/p&gt;
 
