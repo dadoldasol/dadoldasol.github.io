@@ -1,4 +1,95 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://dadoldasol.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://dadoldasol.github.io/" rel="alternate" type="text/html" /><updated>2022-05-11T22:35:48+09:00</updated><id>https://dadoldasol.github.io/feed.xml</id><title type="html">Solog About Learning</title><subtitle>just get on with it</subtitle><author><name>Solog</name></author><entry><title type="html">Ch2. 의미 있는 이름</title><link href="https://dadoldasol.github.io/cleancode/cleancode-ch2/" rel="alternate" type="text/html" title="Ch2. 의미 있는 이름" /><published>2022-05-11T00:00:00+09:00</published><updated>2022-05-11T00:00:00+09:00</updated><id>https://dadoldasol.github.io/cleancode/cleancode-ch2</id><content type="html" xml:base="https://dadoldasol.github.io/cleancode/cleancode-ch2/">&lt;hr /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://dadoldasol.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://dadoldasol.github.io/" rel="alternate" type="text/html" /><updated>2022-05-12T22:34:56+09:00</updated><id>https://dadoldasol.github.io/feed.xml</id><title type="html">Solog About Learning</title><subtitle>just get on with it</subtitle><author><name>Solog</name></author><entry><title type="html">Ch3. 함수</title><link href="https://dadoldasol.github.io/cleancode/cleancode-ch3/" rel="alternate" type="text/html" title="Ch3. 함수" /><published>2022-05-12T00:00:00+09:00</published><updated>2022-05-12T00:00:00+09:00</updated><id>https://dadoldasol.github.io/cleancode/cleancode-ch3</id><content type="html" xml:base="https://dadoldasol.github.io/cleancode/cleancode-ch3/">&lt;p&gt;함수 : 어떤 프로그램이든 가장 기본적인 단위&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;이 장에서 나오는 내용&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;함수가 읽기 쉽고 이해하기 쉬우려면 어떻게 구현해야 하는가?&lt;/li&gt;
+  &lt;li&gt;의도를 분명히 표현하는 함수는 어떻게 구현할 수 있을까?&lt;/li&gt;
+  &lt;li&gt;함수에 어떤 속성을 부여해야 처음 읽는 사람이 프로그램 내부를 직관적으로 파악할 수 있을까?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;작게 만들어라!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;함수를 만드는 첫째 규칙은 ‘작게!’다.&lt;/p&gt;
+
+&lt;p&gt;얼마나 짧아야 좋을까? 각 함수가 이야기 하나를 표현하면 좋다.&lt;br /&gt;
+아래 예제는 책에 나오는 예제로, 함수가 짧고 표현이 명백하다.&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;renderPageWithSetupsAndTearDowns&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
+	&lt;span class=&quot;nc&quot;&gt;PageData&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pageData&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;isSuite&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;throws&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Exception&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;isTestPage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pageData&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;includeSetupAndTeardownPages&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pageData&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;isSuite&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pageData&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getHtml&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;중첩 구조가 생길만큼 함수가 커져서는 안된다.&lt;br /&gt;
+함수에 들여쓰기 수준은 1단이나 2단을 넘어서면 안 된다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;한 가지만 해라!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;함수는 한 가지를 해야 한다. 그 한 가지를 잘 해야 한다. 그 한 가지만을 해야 한다!&lt;/p&gt;
+
+&lt;p&gt;여기서 문제는 그 ‘한 가지’가 무엇인지 알기가 어렵다는 점이다.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;지정된 함수 이름 아래에서 추상화 수준이 하나다.&lt;/li&gt;
+  &lt;li&gt;단순히 다른 표현이 아니라 의미 있는 이름으로 다른 함수를 추출할 수 있다면 그 함수는 여러 작업을 하는 셈이다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;함수 당 추상화 수준은 하나로!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;한 함수 내에 추상화 수준을 섞으면 코드를 읽는 사람이 헷갈린다.&lt;/li&gt;
+  &lt;li&gt;위에서 아래로 코드 읽기: 내려가기 법칙
+코드는 위에서 아래로 이야기처럼 읽혀야 좋다.&lt;br /&gt;
+위에서 아래로 프로그램을 읽으면 함수 추상화 수준이 한 번에 한 단계씩 낮아진다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Switch 문&lt;/p&gt;
+
+&lt;p&gt;본질적으로 Switch 문은 N가지를 처리한다.&lt;br /&gt;
+다형성을 이용해서 각 switch 문을 저차원 클래스에 숨기고 절대로 반복하지 않도록 하자.&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;abstract&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Employee&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;abstract&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;isPayday&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;abstract&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Money&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;calculatePay&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;abstract&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;deliverPay&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Monoey&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pay&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;------------------&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;EmployeeFactory&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Employee&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;makeEmployee&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;EmployeeRecord&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;throws&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;InvalidEmployeeType&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;------------------&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;EmployeeFactoryImpl&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;EmployeeFactory&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Employee&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;makeEmployee&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;EmployeeRecord&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;throws&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;InvalidEmployeeType&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;switch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+			&lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;Commissioned:&lt;/span&gt;
+				&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;CommissionedEmployee&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+			&lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;Hourly:&lt;/span&gt;
+				&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;HourlyEmployee&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+			&lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;Salaried:&lt;/span&gt;
+				&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;SalariedEmployee&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+			&lt;span class=&quot;k&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
+				&lt;span class=&quot;k&quot;&gt;throw&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;InvalidEmployeeType&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+		&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Solog</name></author><category term="cleancode" /><summary type="html">cleancode</summary></entry><entry><title type="html">Ch2. 의미 있는 이름</title><link href="https://dadoldasol.github.io/cleancode/cleancode-ch2/" rel="alternate" type="text/html" title="Ch2. 의미 있는 이름" /><published>2022-05-11T00:00:00+09:00</published><updated>2022-05-11T00:00:00+09:00</updated><id>https://dadoldasol.github.io/cleancode/cleancode-ch2</id><content type="html" xml:base="https://dadoldasol.github.io/cleancode/cleancode-ch2/">&lt;hr /&gt;
 
 &lt;p&gt;이름을 잘 짓는 것은 굉장히 중요하다.&lt;br /&gt;
 이 장에서는 몇가지 이름 짓는 법에 대해 나열한다.&lt;/p&gt;

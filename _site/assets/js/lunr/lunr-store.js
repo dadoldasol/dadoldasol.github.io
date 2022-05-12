@@ -22,4 +22,10 @@ var store = [{
         "tags": [],
         "url": "/cleancode/cleancode-ch2/",
         "teaser": null
+      },{
+        "title": "Ch3. 함수",
+        "excerpt":"함수 : 어떤 프로그램이든 가장 기본적인 단위 이 장에서 나오는 내용 함수가 읽기 쉽고 이해하기 쉬우려면 어떻게 구현해야 하는가? 의도를 분명히 표현하는 함수는 어떻게 구현할 수 있을까? 함수에 어떤 속성을 부여해야 처음 읽는 사람이 프로그램 내부를 직관적으로 파악할 수 있을까? 작게 만들어라! 함수를 만드는 첫째 규칙은 ‘작게!’다. 얼마나 짧아야 좋을까?...","categories": ["cleancode"],
+        "tags": [],
+        "url": "/cleancode/cleancode-ch3/",
+        "teaser": null
       }]
